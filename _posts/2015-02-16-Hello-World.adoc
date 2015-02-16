@@ -1,0 +1,3 @@
+= Hello World
+
+lets try this clean & easy github-based blog system.
