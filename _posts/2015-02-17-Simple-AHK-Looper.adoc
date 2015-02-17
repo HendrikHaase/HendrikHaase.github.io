@@ -25,3 +25,5 @@ Simple AHK Application which will press a key every 2s to 2.5s. Tapered together
     escape::
       TrayTip,exit,-,10
       exitapp
+      
+The script is toggleable via the F1 key and outputs its current state as a tooltip when triggered.
