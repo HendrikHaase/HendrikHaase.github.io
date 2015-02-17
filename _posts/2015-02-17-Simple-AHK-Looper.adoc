@@ -1,8 +1,6 @@
 = Simple AHK Looper
 
-
-
-Simple AHK Application which will press a key every 2s to 2.5s. Tapered together for friend playing a videogame. Well actually it seems he is only playing it part-time while watching streams, else he wouldnt have the need to have a script to press a key for him ... well you know.
+Simple AHK Application which will press a key every 2s to 2.5s. Tapered together for friend playing a videogame. Well actually it seems he is only playing it part-time while watching streams, else he wouldnt have the need to have a script to press a key for him ... well, you know.
 
     BreakLoop = 0
     TrayTip,F1 toggles this! ,-,10
@@ -29,3 +27,5 @@ Simple AHK Application which will press a key every 2s to 2.5s. Tapered together
       exitapp
       
 The script is toggleable via the F1 key and outputs its current state as a tooltip when triggered.
+
+
