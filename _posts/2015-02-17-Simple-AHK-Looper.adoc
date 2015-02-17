@@ -1,0 +1,27 @@
+= Simple AHK Looper
+
+Simple AHK Application which will press a key every 2s to 2.5s. Tapered together for friend playing a videogame. Well actually it seems he is only playing it part-time while watching streams, else he wouldnt have the need to have a script to press a key for him ... well you know.
+
+    BreakLoop = 0
+    TrayTip,F1 toggles this! ,-,10
+    return
+    F1::
+    BreakLoop := !BreakLoop
+    if BreakLoop = 1
+    {
+      TrayTip,start,-,10
+      Random rand, 2000, 2500
+      SetTimer,RepeatCode,%rand%
+    }
+    else
+    {
+      TrayTip,stopped,-,10
+      Settimer,RepeatCode,off
+    }
+    return
+    RepeatCode:
+      Send 4
+      return
+    escape::
+      TrayTip,exit,-,10
+      exitapp
